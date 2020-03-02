@@ -16,17 +16,18 @@ function inquireGitHub() {
         ])
         .then(answers => {
             githubUsername = answers.github;
+            function getUser() {
+                const API = axious.get(`https://api.github.com/users/${githubUsername}`)
+                .then(function (response) {
+                    console.log(response);
+                    email = response.data.email;
+                }).catch(function (error) {
+                    console.log("error");
+                });
+            }
+            getUser();
             
         });
-}
-
-function getUser() {
-    const API = axious.get(`https://api.github.com/users/${githubUsername}`)
-    .then(function (response) {
-        email = response.data.email;
-    }).catch(function (error) {
-        console.log("error");
-    });
 }
 
 function inquireProject(){
@@ -106,5 +107,3 @@ github email`;
 }
 
 inquireGitHub();
-getUser();
-inquireProject();
