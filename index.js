@@ -19,7 +19,7 @@ function inquireGitHub() {
         .then(answers => {
             githubUsername = answers.github;
             function getUser() {
-                const API = axious.get(`https://api.github.com/users/${githubUsername}`)
+                axious.get(`https://api.github.com/users/${githubUsername}`)
                 .then(function (response) {
                     console.log(response);
                     name = response.data.name;

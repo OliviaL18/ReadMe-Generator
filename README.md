@@ -1,7 +1,7 @@
 
-# project a
+# test
 
-it's a project
+test
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ it's a project
 
 ## Installation
 
-What things you need to install the software and how to install them.
+What things you need to install the software and how to install them
 
 >Give examples
 
