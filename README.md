@@ -1,7 +1,7 @@
 
-# project A
+# README Generator
 
-it's a project
+Construct a README file according to user 
 
 ## Table of Contents
 
@@ -47,9 +47,11 @@ How to run tests for this system?
 
 ## Contact
 
-![User Image](https://avatars1.githubusercontent.com/u/55845876?v=4)
+### OliviaL18
 
 * **Olivia Loos** - https://api.github.com/users/OliviaL18
 
-GitHub Username: OliviaL18
 Email: null
+
+![User Image](https://avatars1.githubusercontent.com/u/55845876?v=4)
+

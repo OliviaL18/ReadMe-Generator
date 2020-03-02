@@ -100,12 +100,14 @@ How to run tests for this system?
 
 ## Contact
 
-![User Image](${imgURL})
+### ${githubUsername}
 
 * **${name}** - ${url}
 
-GitHub Username: ${githubUsername}
 Email: ${email}
+
+![User Image](${imgURL})
+
 `;
                 
                         fs.writeFile("README.md", readmeCode, function(err){
