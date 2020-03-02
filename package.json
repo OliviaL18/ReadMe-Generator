@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "Contruct a ReadMe file for a GitHub repository according to user input via the command prompt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliviaL18/ReadMe-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OliviaL18/ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/OliviaL18/ReadMe-Generator#readme"
+}
