@@ -1,7 +1,7 @@
 
-# Project ABC
+# project a
 
-It's a short project about some interesting stuff.
+it's a project
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ It's a short project about some interesting stuff.
 
 ## Installation
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
 
 >Give examples
 

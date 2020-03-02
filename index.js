@@ -3,7 +3,9 @@ const inquirer = require("inquirer");
 const axious = require("axios");
 
 let githubUsername;
+let name;
 let email;
+let url;
 
 function inquireGitHub() {
     inquirer
@@ -19,7 +21,13 @@ function inquireGitHub() {
             function getUser() {
                 const API = axious.get(`https://api.github.com/users/${githubUsername}`)
                 .then(function (response) {
+                    console.log(response);
+                    name = response.data.name;
+                        console.log(`NAME: ${name}`);
                     email = response.data.email;
+                        console.log(`EMAIL: ${email}`);
+                    url = response.data.url;
+                        console.log(`URL: ${url}`);
                 }).catch(function (error) {
                     console.log("error");
                 });
@@ -112,7 +120,5 @@ github email`;
             
         });
 }
-
-
 
 inquireGitHub();
