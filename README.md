@@ -1,7 +1,7 @@
 
-# Project Title
+# Project ABC
 
-DESCRIPTION TEXT HERE
+It's a short project about some interesting stuff.
 
 ## Table of Contents
 
@@ -46,6 +46,8 @@ When contributing to this repository, please first discuss the change you wish t
 How to run tests for this system?
 
 ## Contact
+
+GitHub Username: OliviaL18
 
 * **NAME HERE** - (github url here)
 

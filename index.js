@@ -31,14 +31,20 @@ function inquireGitHub() {
                                 message: "What is the name of your project?",
                                 name: "projectName",
                             },
+                            {
+                                type: 'input',
+                                message: "Write a description of oyur project",
+                                name: "projectDescription",
+                            },
                         ])
                         .then(answers => {
                             const projectName = answers.projectName;
+                            const projectDescription = answers.projectDescription;
                             console.log(projectName);
                             const readmeCode = `
-# Project Title
+# ${projectName}
 
-DESCRIPTION TEXT HERE
+${projectDescription}
 
 ## Table of Contents
 
@@ -83,6 +89,8 @@ When contributing to this repository, please first discuss the change you wish t
 How to run tests for this system?
 
 ## Contact
+
+GitHub Username: ${githubUsername}
 
 * **NAME HERE** - (github url here)
 
