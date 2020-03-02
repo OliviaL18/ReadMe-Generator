@@ -11,7 +11,17 @@ inquirer
     ])
     .then(answers => {
         const githubUsername = answers.github;
-
+        const getUser = async (user) => {
+            const API = await fetch(`https://api.github.com/users/${user}`)
+            const userData = await API.json();
+            return { userData }
+        }
+        const showData = () => {
+            getUser(githubUsername).then((results) => {
+                console.log(results);
+            })
+        };
+        showData();
         const readmeCode = `
 # Project Title
 
