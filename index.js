@@ -17,19 +17,16 @@ function inquireGitHub() {
         .then(answers => {
             githubUsername = answers.github;
             
-        }
+        });
 }
 
 function getUser() {
     const API = axious.get(`https://api.github.com/users/${githubUsername}`)
-    const userData = await API.json();
-    console.log(userData)
-    return { userData }
     .then(function (response) {
         email = response.data.email;
     }).catch(function (error) {
         console.log("error");
-    }
+    });
 }
 
 function inquireProject(){
