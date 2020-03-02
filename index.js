@@ -72,31 +72,39 @@ ${projectDescription}
 
 ## Installation
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
 
 >Give examples
 
-Steps to get it going
+Installation steps:
 
->step
+>Step 1
 
->step
+>Step 2
+
+>etc.
 
 ## Usage
 
-something here about using 
+Provide directions on how to deploy application on a live system.
+
+Describe the functionality of the application and its use case.
 
 ## License
 
-This project is licensed under the MIT License (put something better here)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License.
 
 ## Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+Add directions for how users can offer contributions, process for submitting pull requests, etc.
+
+When contributing to this repository, please first contact the owner of the respository to discuss the change you wish to make.
 
 ## Tests
 
-How to run tests for this system?
+Add instructions here to explain how to run tests for the system.
 
 ## Contact
 
