@@ -19,30 +19,23 @@ function inquireGitHub() {
             function getUser() {
                 const API = axious.get(`https://api.github.com/users/${githubUsername}`)
                 .then(function (response) {
-                    console.log(response);
                     email = response.data.email;
                 }).catch(function (error) {
                     console.log("error");
                 });
-            }
-            getUser();
-            
-        });
-}
-
-function inquireProject(){
-    inquirer
-        .prompt([
-            {
-                type: 'input',
-                message: "What is the name of your project?",
-                name: "projectName",
-            },
-        ])
-        .then(answers => {
-            const projectName = answers.projectName;
-            console.log(projectName);
-            const readmeCode = `
+                function inquireProject(){
+                    inquirer
+                        .prompt([
+                            {
+                                type: 'input',
+                                message: "What is the name of your project?",
+                                name: "projectName",
+                            },
+                        ])
+                        .then(answers => {
+                            const projectName = answers.projectName;
+                            console.log(projectName);
+                            const readmeCode = `
 # Project Title
 
 DESCRIPTION TEXT HERE
@@ -96,14 +89,22 @@ How to run tests for this system?
 github image
 
 github email`;
-
-        fs.writeFile("README.md", readmeCode, function(err){
-            if(err){
-                throw err;
+                
+                        fs.writeFile("README.md", readmeCode, function(err){
+                            if(err){
+                                throw err;
+                            }
+                            console.log("successfully created README");
+                        });
+                    });
+                }
+                inquireProject();
             }
-            console.log("successfully created README");
+            getUser();
+            
         });
-    });
 }
+
+
 
 inquireGitHub();
