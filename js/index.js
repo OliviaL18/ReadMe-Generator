@@ -1,28 +1,50 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const axious = require("axios");
 
-inquirer
-    .prompt([
-        {
-            type: 'input',
-            message: "What is your GitHub Username?",
-            name: "github",
-        },
-    ])
-    .then(answers => {
-        const githubUsername = answers.github;
-        const getUser = async (user) => {
-            const API = await fetch(`https://api.github.com/users/${user}`)
-            const userData = await API.json();
-            return { userData }
+let githubUsername;
+let email;
+
+function inquireGitHub() {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: "What is your GitHub Username?",
+                name: "github",
+            },
+        ])
+        .then(answers => {
+            githubUsername = answers.github;
+            
         }
-        const showData = () => {
-            getUser(githubUsername).then((results) => {
-                console.log(results);
-            })
-        };
-        showData();
-        const readmeCode = `
+}
+
+function getUser() {
+    const API = axious.get(`https://api.github.com/users/${githubUsername}`)
+    const userData = await API.json();
+    console.log(userData)
+    return { userData }
+    .then(function (response) {
+        email = response.data.email;
+    }).catch(function (error) {
+        console.log("error");
+    }
+}
+
+function inquireProject(){
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                message: "What is the name of your project?",
+                name: "projectName",
+            },
+        ])
+        .then(answers => {
+            const projectName = answers.projectName;
+            console.log(projectName);
+            const readmeCode = `
 # Project Title
 
 DESCRIPTION TEXT HERE
@@ -84,3 +106,8 @@ github email`;
             console.log("successfully created README");
         });
     });
+}
+
+inquireGitHub();
+getUser();
+inquireProject();
