@@ -98,13 +98,11 @@ How to run tests for this system?
 
 ## Contact
 
+* **${name}** - ${url}
+
 GitHub Username: ${githubUsername}
-
-* **NAME HERE** - (github url here)
-
-github image
-
-github email`;
+Email: ${email}
+`;
                 
                         fs.writeFile("README.md", readmeCode, function(err){
                             if(err){
