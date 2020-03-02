@@ -1,7 +1,7 @@
 
-# test
+# project A
 
-test
+it's a project
 
 ## Table of Contents
 
@@ -47,10 +47,9 @@ How to run tests for this system?
 
 ## Contact
 
+![User Image](https://avatars1.githubusercontent.com/u/55845876?v=4)
+
+* **Olivia Loos** - https://api.github.com/users/OliviaL18
+
 GitHub Username: OliviaL18
-
-* **NAME HERE** - (github url here)
-
-github image
-
-github email
+Email: null

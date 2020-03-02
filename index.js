@@ -28,6 +28,8 @@ function inquireGitHub() {
                         console.log(`EMAIL: ${email}`);
                     url = response.data.url;
                         console.log(`URL: ${url}`);
+                    imgURL = response.data.avatar_url;
+                        console.log(`Image URL: ${imgURL}`);
                 }).catch(function (error) {
                     console.log("error");
                 });
@@ -41,7 +43,7 @@ function inquireGitHub() {
                             },
                             {
                                 type: 'input',
-                                message: "Write a description of oyur project",
+                                message: "Write a description of your project",
                                 name: "projectDescription",
                             },
                         ])
@@ -97,6 +99,8 @@ When contributing to this repository, please first discuss the change you wish t
 How to run tests for this system?
 
 ## Contact
+
+![User Image](${imgURL})
 
 * **${name}** - ${url}
 
