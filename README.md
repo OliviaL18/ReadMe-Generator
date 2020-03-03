@@ -1,21 +1,7 @@
 
-# README Generator
+# TITLE
 
-Contruct a README file for a GitHub repository, according to user input received via the command prompt.
-
-## Table of Contents
-
-*Installation
-
-*Usage
-
-*License
-
-*Contributers
-
-*Tests
-
-*Questions 
+Description
 
 ## Installation
 

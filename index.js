@@ -21,15 +21,10 @@ function inquireGitHub() {
             function getUser() {
                 axious.get(`https://api.github.com/users/${githubUsername}`)
                 .then(function (response) {
-                    console.log(response);
                     name = response.data.name;
-                        console.log(`NAME: ${name}`);
                     email = response.data.email;
-                        console.log(`EMAIL: ${email}`);
                     url = response.data.url;
-                        console.log(`URL: ${url}`);
                     imgURL = response.data.avatar_url;
-                        console.log(`Image URL: ${imgURL}`);
                 }).catch(function (error) {
                     console.log("error");
                 });
@@ -50,7 +45,6 @@ function inquireGitHub() {
                         .then(answers => {
                             const projectName = answers.projectName;
                             const projectDescription = answers.projectDescription;
-                            console.log(projectName);
                             const readmeCode = `
 # ${projectName}
 
