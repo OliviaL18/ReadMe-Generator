@@ -26,7 +26,7 @@ function inquireGitHub() {
                     url = response.data.url;
                     imgURL = response.data.avatar_url;
                 }).catch(function (error) {
-                    console.log("error");
+                    console.log("Error.");
                 });
                 function inquireProject(){
                     inquirer

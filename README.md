@@ -1,7 +1,21 @@
 
-# TITLE
+# ReadMe-Generator
 
-Description
+Generate a ReadMe file using input received from the user via the command prompt.
+
+## Table of Contents
+
+*Installation
+
+*Usage
+
+*License
+
+*Contributers
+
+*Tests
+
+*Questions 
 
 ## Installation
 
