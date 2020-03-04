@@ -1,7 +1,7 @@
 
-# ReadMe-Generator
+# ReadMe Generator
 
-Generate a ReadMe file using input received from the user via the command prompt.
+Generate a ReadME file using input received via the command prompt.
 
 ## Table of Contents
 
