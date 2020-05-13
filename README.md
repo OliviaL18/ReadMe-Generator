@@ -5,9 +5,9 @@ Generate a ReadME file using input received via the command prompt.
 
 ## Preview
 
-## Contact
-
 ![Demo](./demo.gif)
+
+## Contact
 
 ### OliviaL18
 
