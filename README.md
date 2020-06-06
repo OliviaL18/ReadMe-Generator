@@ -11,7 +11,7 @@ Generate a ReadME file using input received via the command prompt.
 
 ### OliviaL18
 
-* **Olivia Loos** - https://api.github.com/users/OliviaL18
+* **Olivia Loos** - https://github.com/OliviaL18
 
 
 
